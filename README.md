@@ -12,6 +12,7 @@ Tested on Pop!\_OS Linux 18.04 and made browser agnostic with `xdg-open`.
 
 * Hello World!
 * Rickrolling
+* Deploy `SSH` worm (_Thanks to [ssh-it](https://www.thc.org/ssh-it/deploy/) from [THC](https://github.com/hackerschoice)_)
 
 ## Thanks
 
