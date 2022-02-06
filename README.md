@@ -5,6 +5,7 @@ OMG Cable Payloads for mobiles, tablets and computers (_mainly for Linux_)
 ## Mobile
 
 * Android 12 Test
+* Android 12 Rickrolling (_Based on [@\_MG\_](https://twitter.com/_MG_)'s work_)
 
 ## Computer
 
