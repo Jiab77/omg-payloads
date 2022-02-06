@@ -1,0 +1,28 @@
+REM    Android 12 Rick Rolling
+REM    Version 1.0
+REM    OS: Android 12
+REM    Device: Samsung S21 5G
+REM    Author: Jiab77
+
+REM    Based on previous work made by MG: https://twitter.com/_mg_
+REM    Will simply open chrome, if possible in incognito window and load the video.
+
+REM Set your keyboard layout below
+REM or comment the line to use the default one
+DUCKY_LANG us
+DELAY 500
+GUI f
+DELAY 1000
+STRING chrome
+ENTER
+DELAY 1000
+REM Trying to catch incognito option
+DOWN
+REM Uncomment the line below if necessary
+REM DOWN
+ENTER
+DELAY 500
+CTRL l
+DELAY 500
+STRING https://youtu.be/dQw4w9WgXcQ
+ENTER

@@ -1,0 +1,29 @@
+REM    Android 12 Test
+REM    Version 1.0
+REM    OS: Android 12
+REM    Device: Samsung S21 5G
+REM    Author: Jiab77
+
+REM    Will simply open the Play Store and search for the 'calc' app.
+
+REM Set your keyboard layout below
+REM or comment the line to use the default one
+DUCKY_LANG us
+DELAY 500
+REM The line below will open the file explorer
+REM GUI r
+REM The line below will open the search engine
+GUI f
+DELAY 1000
+REM Open play store
+STRING play
+ENTER
+DELAY 1000
+ENTER
+DELAY 1000
+REM Toggle play store search field
+TAB
+ENTER
+REM Enter any app name below
+STRING calc
+ENTER
