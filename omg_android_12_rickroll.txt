@@ -1,5 +1,5 @@
 REM    Android 12 Rick Rolling
-REM    Version 1.0
+REM    Version 1.1
 REM    OS: Android 12
 REM    Device: Samsung S21 5G
 REM    Author: Jiab77
@@ -16,10 +16,10 @@ DELAY 1000
 STRING chrome
 ENTER
 DELAY 1000
-REM Trying to catch incognito option
+REM Trying to catch incognito option (need to decide if that's necessary)
 DOWN
 REM Uncomment the line below if necessary
-REM DOWN
+DOWN
 ENTER
 DELAY 500
 CTRL l
