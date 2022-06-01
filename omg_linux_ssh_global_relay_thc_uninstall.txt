@@ -1,0 +1,37 @@
+REM    Linux SSH worm (ssh-it) from THC -- Removal script
+REM    Version 1.0
+REM    OS: Pop!_OS Linux 18.04 (Ubuntu based distrib)
+REM    Author: Jiab77
+
+REM    Will simply open a terminal window and remove the ssh worm.
+REM    Read here for more details: https://www.thc.org/ssh-it/deploy/
+
+REM Set your keyboard layout below
+REM or comment the line to use the default one
+DUCKY_LANG ch
+DELAY 500
+GUI
+DELAY 500
+STRING terminal
+DELAY 500
+ENTER
+DELAY 1000
+STRING # Remove the ssh global relay
+ENTER
+DELAY 2000
+STRING GS_UNDO=1 bash -c "$(curl -fsSL gsocket.io/x)"
+ENTER
+DELAY 5000
+STRING # Check if the worm is still here
+ENTER
+DELAY 2000
+STRING which gs-netcat
+ENTER
+DELAY 5000
+STRING # Should not be there anymore
+ENTER
+STRING # Leave the terminal window
+ENTER
+DELAY 2000
+STRING exit
+ENTER

